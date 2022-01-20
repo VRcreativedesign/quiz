@@ -1,0 +1,1042 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mock Up Test</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--CSS Spinner-->
+    <div class="spinner-wrapper">
+        <div class="spinner">
+            <h3 class="text-center h3-responsive  white-text">Please Wait Test Is Setting Up...</h3>
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+
+        </div>
+    </div>
+
+    <header class="white">
+        <div class="">
+            <nav class="navbar navbar-expand-lg navbar-light white">
+                <ul class="nav navbar-nav nav-flex-icons position-absolute">
+                    <li class="nav-item">
+                        <h3 class="h3-responsive">Online Test Series</h3>
+                    </li>
+                </ul>
+                <div class="mx-auto">
+                    <img src="img/logo.png" height="55" alt="logo">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper mt-4">
+            <div class="row">
+                <div class="col-lg-9 col-md-7">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="h5-responsive text-center text-uppercase font-weight-bold"> Demo Exam</h5>
+                        </div>
+                        <div class="col-md-12 border border-dark p-2 mb-2">
+                            <ul class="nav md-pills  pills-secondary">
+                                <li class="nav-item">
+                                    <a onclick="jumpto('reasoning')" class="btn btn-blue font-weight-bold text-uppercase nav-link active"
+                                        data-toggle="tab" role="tab">Reasoning</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a onclick="jumpto('english')" class="btn btn-blue font-weight-bold text-uppercase nav-link"
+                                        data-toggle="tab" role="tab">English</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a onclick="jumpto('maths')" class="btn btn-blue font-weight-bold text-uppercase nav-link"
+                                        data-toggle="tab" role="tab">Maths</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a onclick="jumpto('generalawareness')" class="btn btn-blue font-weight-bold text-uppercase nav-link"
+                                        data-toggle="tab" role="tab">General awareness</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a onclick="jumpto('computer')" class="btn btn-blue font-weight-bold text-uppercase nav-link"
+                                        data-toggle="tab" role="tab">Computer Knowledge</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 p-0">
+                            <div class="card border border-dark rounded-0">
+                                <div class="card-header">
+                                    <div class="d-flex flex-row-reverse">
+                                        <div class="px-2 font-weight-bold">Negative Mark:
+                                            <span class="text-danger">0.25</span>
+                                        </div>
+                                        <div class="px-2 font-weight-bold">Right Mark:
+                                            <span class="text-success">1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body" id="questionbody">
+                                    <div id="reasoning" questid="1" class="ques">
+                                        <p class="font-weight-bold">Question No.1</p>
+                                        <span>
+                                            <p>The questions given below contain two statements giving certain data.
+                                                You have
+                                                to decide whether the data given in the statements are sufficient for
+                                                answering
+                                                the question ?</p>
+                                            <p>In which direction is Mahatmaji's statue facing ?&nbsp;
+                                                <br>
+                                                <strong>I. </strong>&nbsp; The statue is towards the northern end of
+                                                the city.
+                                                <br>
+                                                <strong>II.</strong> &nbsp;The statue's shadow falls towards East at 5
+                                                O'clock in
+                                                the evening.</p>
+                                            <p>
+                                                <strong>Mark answer -</strong>
+                                            </p>
+                                            <p>
+                                                <strong></strong>&nbsp;</p>
+                                        </span>
+                                        <br>
+                                        <div id="QuestionOptions">
+                                            <ol class="QuestionOptionsol">
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="1" id="exampleRadios1"
+                                                        value="option1">
+                                                    <label class="form-check-label" for="exampleRadios1">
+                                                        If statement I alone is sufficient but statement II alone is
+                                                        not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="1" id="exampleRadios2"
+                                                        value="option2">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        If statement II alone is sufficient but statement I alone is
+                                                        not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="1" id="exampleRadios3"
+                                                        value="option3">
+                                                    <label class="form-check-label" for="exampleRadios3">
+                                                        If each statement alone (either I or II) is sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="1" id="exampleRadios4"
+                                                        value="option4">
+                                                    <label class="form-check-label" for="exampleRadios4">
+                                                        If statement I and II together are not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="1" id="exampleRadios5"
+                                                        value="option5">
+                                                    <label class="form-check-label" for="exampleRadios5">
+                                                        If both statements together are sufficient, but neither
+                                                        statementalone is sufficient.
+                                                    </label>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div questid="2" class="ques">
+                                        reasoning question 2
+                                        <br>
+                                        <div id="QuestionOptions">
+                                            <ol class="QuestionOptionsol">
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="2" id="exampleRadios1"
+                                                        value="option1">
+                                                    <label class="form-check-label" for="exampleRadios1">
+                                                        If statement I alone is sufficient but statement II alone is
+                                                        not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="2" id="exampleRadios2"
+                                                        value="option2">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        If statement II alone is sufficient but statement I alone is
+                                                        not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="2" id="exampleRadios3"
+                                                        value="option3">
+                                                    <label class="form-check-label" for="exampleRadios3">
+                                                        If each statement alone (either I or II) is sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="2" id="exampleRadios4"
+                                                        value="option4">
+                                                    <label class="form-check-label" for="exampleRadios4">
+                                                        If statement I and II together are not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="2" id="exampleRadios5"
+                                                        value="option5">
+                                                    <label class="form-check-label" for="exampleRadios5">
+                                                        If both statements together are sufficient, but neither
+                                                        statementalone is sufficient.
+                                                    </label>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+
+                                    <div id="english" questid="3" class="ques">
+                                        <p class="font-weight-bold">Question No.2</p>
+                                        <span id="lblQuestion">
+                                            <p>Read each part of the sentence to find out if there is any error in it.
+                                                The error,
+                                                if any, will be in one part of the sentence. The number of that part is
+                                                the
+                                                answer. If there is no error, mark your answer as (5).</p>
+                                            <p>Houses could be constructed (1)/ a meter above the ground (2)/in places
+                                                whose
+                                                (3)/were vulnerable to flooding (4)/ No error (5)</p>
+                                            <p>&nbsp;</p>
+                                        </span>
+                                        <br>
+                                        <div id="QuestionOptions">
+                                            <ol class="QuestionOptionsol">
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="3" id="exampleRadios1"
+                                                        value="option1">
+                                                    <label class="form-check-label" for="exampleRadios1">
+                                                        If statement I alone is sufficient but statement II alone is
+                                                        not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="3" id="exampleRadios2"
+                                                        value="option2">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        If statement II alone is sufficient but statement I alone is
+                                                        not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="3" id="exampleRadios3"
+                                                        value="option3">
+                                                    <label class="form-check-label" for="exampleRadios3">
+                                                        If each statement alone (either I or II) is sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="3" id="exampleRadios4"
+                                                        value="option4">
+                                                    <label class="form-check-label" for="exampleRadios4">
+                                                        If statement I and II together are not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="3" id="exampleRadios5"
+                                                        value="option5">
+                                                    <label class="form-check-label" for="exampleRadios5">
+                                                        If both statements together are sufficient, but neither
+                                                        statementalone is sufficient.
+                                                    </label>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div questid="4" class="ques">
+                                        english question 2
+                                        <br>
+                                        <div id="QuestionOptions">
+                                            <ol class="QuestionOptionsol">
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="4" id="exampleRadios1"
+                                                        value="option1">
+                                                    <label class="form-check-label" for="exampleRadios1">
+                                                        If statement I alone is sufficient but statement II alone is
+                                                        not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="4" id="exampleRadios2"
+                                                        value="option2">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        If statement II alone is sufficient but statement I alone is
+                                                        not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="4" id="exampleRadios3"
+                                                        value="option3">
+                                                    <label class="form-check-label" for="exampleRadios3">
+                                                        If each statement alone (either I or II) is sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="4" id="exampleRadios4"
+                                                        value="option4">
+                                                    <label class="form-check-label" for="exampleRadios4">
+                                                        If statement I and II together are not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="4" id="exampleRadios5"
+                                                        value="option5">
+                                                    <label class="form-check-label" for="exampleRadios5">
+                                                        If both statements together are sufficient, but neither
+                                                        statementalone is sufficient.
+                                                    </label>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+
+                                    <div id="maths" questid="5" class="ques">
+                                        <p class="font-weight-bold">Question No.3</p>
+                                        <span id="lblQuestion">
+                                            <p>In each of the following sentences there is a blank space given. Below
+                                                each five
+                                                words have been denoted by numbers (1), (2), (3), (4) and (5). Find
+                                                out&nbsp;
+                                                which word can be filled up in the blank to make the sentence
+                                                meaningfully
+                                                complete.
+                                            </p>
+                                            <p>Akhilesh was accompanied by ———————ministers at the press conference.</p>
+                                            <p>&nbsp;</p>
+                                        </span>
+                                        <br>
+                                        <div id="QuestionOptions">
+                                            <ol class="QuestionOptionsol">
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="5" id="exampleRadios1"
+                                                        value="option1">
+                                                    <label class="form-check-label" for="exampleRadios1">
+                                                        If statement I alone is sufficient but statement II alone is
+                                                        not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="5" id="exampleRadios2"
+                                                        value="option2">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        If statement II alone is sufficient but statement I alone is
+                                                        not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="5" id="exampleRadios3"
+                                                        value="option3">
+                                                    <label class="form-check-label" for="exampleRadios3">
+                                                        If each statement alone (either I or II) is sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="5" id="exampleRadios4"
+                                                        value="option4">
+                                                    <label class="form-check-label" for="exampleRadios4">
+                                                        If statement I and II together are not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="5" id="exampleRadios5"
+                                                        value="option5">
+                                                    <label class="form-check-label" for="exampleRadios5">
+                                                        If both statements together are sufficient, but neither
+                                                        statementalone is sufficient.
+                                                    </label>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div questid="6" class="ques">
+                                        maths question 2
+                                        <br>
+                                        <div id="QuestionOptions">
+                                            <ol class="QuestionOptionsol">
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="6" id="exampleRadios1"
+                                                        value="option1">
+                                                    <label class="form-check-label" for="exampleRadios1">
+                                                        If statement I alone is sufficient but statement II alone is
+                                                        not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="6" id="exampleRadios2"
+                                                        value="option2">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        If statement II alone is sufficient but statement I alone is
+                                                        not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="6" id="exampleRadios3"
+                                                        value="option3">
+                                                    <label class="form-check-label" for="exampleRadios3">
+                                                        If each statement alone (either I or II) is sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="6" id="exampleRadios4"
+                                                        value="option4">
+                                                    <label class="form-check-label" for="exampleRadios4">
+                                                        If statement I and II together are not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="6" id="exampleRadios5"
+                                                        value="option5">
+                                                    <label class="form-check-label" for="exampleRadios5">
+                                                        If both statements together are sufficient, but neither
+                                                        statementalone is sufficient.
+                                                    </label>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+
+                                    <div id="generalawareness" questid="7" class="ques">
+                                        <p class="font-weight-bold">Question No.4</p>
+                                        <span id="lblQuestion">
+                                            <p>The questions given below contain two statements giving certain data.
+                                                You have
+                                                to decide whether the data given in the statements are sufficient for
+                                                answering
+                                                the question ?</p>
+                                            <p>What is the total number of pupils in the class in final year?&nbsp;
+                                                <br>
+                                                <strong>I.&nbsp;</strong>&nbsp;&nbsp;The number of boys in the final
+                                                year class is
+                                                twice as much as the number of girls in&nbsp;that class.
+                                                <br>
+                                                <strong>II.</strong> &nbsp;The sum of the ages of all the pupils in the
+                                                class is
+                                                399 years and their average age is 19 years.&nbsp;
+                                            </p>
+                                            <p>
+                                                <strong>Mark answer -</strong>
+                                            </p>
+                                            <p>&nbsp;</p>
+                                        </span>
+                                        <br>
+                                        <div id="QuestionOptions">
+                                            <ol class="QuestionOptionsol">
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="7" id="exampleRadios1"
+                                                        value="option1">
+                                                    <label class="form-check-label" for="exampleRadios1">
+                                                        If statement I alone is sufficient but statement II alone is
+                                                        not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="7" id="exampleRadios2"
+                                                        value="option2">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        If statement II alone is sufficient but statement I alone is
+                                                        not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="7" id="exampleRadios3"
+                                                        value="option3">
+                                                    <label class="form-check-label" for="exampleRadios3">
+                                                        If each statement alone (either I or II) is sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="7" id="exampleRadios4"
+                                                        value="option4">
+                                                    <label class="form-check-label" for="exampleRadios4">
+                                                        If statement I and II together are not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="7" id="exampleRadios5"
+                                                        value="option5">
+                                                    <label class="form-check-label" for="exampleRadios5">
+                                                        If both statements together are sufficient, but neither
+                                                        statementalone is sufficient.
+                                                    </label>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div questid="8" class="ques">
+                                        general awareness question 2
+                                        <br>
+                                        <div id="QuestionOptions">
+                                            <ol class="QuestionOptionsol">
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="8" id="exampleRadios1"
+                                                        value="option1">
+                                                    <label class="form-check-label" for="exampleRadios1">
+                                                        If statement I alone is sufficient but statement II alone is
+                                                        not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="8" id="exampleRadios2"
+                                                        value="option2">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        If statement II alone is sufficient but statement I alone is
+                                                        not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="8" id="exampleRadios3"
+                                                        value="option3">
+                                                    <label class="form-check-label" for="exampleRadios3">
+                                                        If each statement alone (either I or II) is sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="8" id="exampleRadios4"
+                                                        value="option4">
+                                                    <label class="form-check-label" for="exampleRadios4">
+                                                        If statement I and II together are not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="8" id="exampleRadios5"
+                                                        value="option5">
+                                                    <label class="form-check-label" for="exampleRadios5">
+                                                        If both statements together are sufficient, but neither
+                                                        statementalone is sufficient.
+                                                    </label>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+
+                                    <div id="computer" questid="9" class="ques">
+                                        <p class="font-weight-bold">Question No.5</p>
+                                        <span id="lblQuestion">
+                                            <p>If the letters of the word
+                                                <strong>'PROTECTION'</strong> which are at odd numbered position in the
+                                                English alphabet
+                                                are picked up and are arranged in alphabetical order from left and if
+                                                they
+                                                are now substituted by Z, Y, X and so on, beginning from left which
+                                                letter
+                                                will be substituted by X ? </p>
+                                            <p>&nbsp;</p>
+                                        </span>
+                                        <br>
+                                        <div id="QuestionOptions">
+                                            <ol class="QuestionOptionsol">
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="9" id="exampleRadios1"
+                                                        value="option1">
+                                                    <label class="form-check-label" for="exampleRadios1">
+                                                        If statement I alone is sufficient but statement II alone is
+                                                        not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="9" id="exampleRadios2"
+                                                        value="option2">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        If statement II alone is sufficient but statement I alone is
+                                                        not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="9" id="exampleRadios3"
+                                                        value="option3">
+                                                    <label class="form-check-label" for="exampleRadios3">
+                                                        If each statement alone (either I or II) is sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="9" id="exampleRadios4"
+                                                        value="option4">
+                                                    <label class="form-check-label" for="exampleRadios4">
+                                                        If statement I and II together are not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="9" id="exampleRadios5"
+                                                        value="option5">
+                                                    <label class="form-check-label" for="exampleRadios5">
+                                                        If both statements together are sufficient, but neither
+                                                        statementalone is sufficient.
+                                                    </label>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div questid="10" class="ques">
+                                        computer question 2
+                                        <br>
+                                        <div id="QuestionOptions">
+                                            <ol class="QuestionOptionsol">
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="10" id="exampleRadios1"
+                                                        value="option1">
+                                                    <label class="form-check-label" for="exampleRadios1">
+                                                        If statement I alone is sufficient but statement II alone is
+                                                        not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="10" id="exampleRadios2"
+                                                        value="option2">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        If statement II alone is sufficient but statement I alone is
+                                                        not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="10" id="exampleRadios3"
+                                                        value="option3">
+                                                    <label class="form-check-label" for="exampleRadios3">
+                                                        If each statement alone (either I or II) is sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="10" id="exampleRadios4"
+                                                        value="option4">
+                                                    <label class="form-check-label" for="exampleRadios4">
+                                                        If statement I and II together are not sufficient.
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input class="form-check-input" type="radio" name="10" id="exampleRadios5"
+                                                        value="option5">
+                                                    <label class="form-check-label" for="exampleRadios5">
+                                                        If both statements together are sufficient, but neither
+                                                        statementalone is sufficient.
+                                                    </label>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card-footer">
+                                    <div class="MarkForReview">
+                                        <a id="btnMarkForReview" questid="1" class="btn SecondaryButton">Mark for
+                                            Review &amp; Next</a>
+                                        <a id="btnClearResponse" questid="1" class="btn SecondaryButton">Clear Response</a>
+                                    </div>
+                                    <button id="next" questid="1" class="btn DefaultButton">Save and Next</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-3 col-md-5">
+                    <h6 class="font-weight-bold">Total time Remains:
+                        <span class="countdown"></span> minutes</h6>
+                    <h6 class="font-weight-bold">Demo User</h6>
+                    <div class="question-palette p-1">
+                        <h6 class="font-weight-bold mb-0">Question Palette </h6>
+                    </div>
+                    <div class="question-palette-buttons p-1">
+                        <button id="1" type="button" onclick="jumptoquest(1)" class="palette ButtonNotVisited">1</button>
+                        <button id="2" type="button" onclick="jumptoquest(2)" class="palette ButtonNotVisited">2</button>
+                        <button id="3" type="button" onclick="jumptoquest(3)" class="palette ButtonNotVisited">3</button>
+                        <button id="4" type="button" onclick="jumptoquest(4)" class="palette ButtonNotVisited">4</button>
+                        <button id="5" type="button" onclick="jumptoquest(5)" class="palette ButtonNotVisited">5</button>
+                        <button id="6" type="button" onclick="jumptoquest(6)" class="palette ButtonNotVisited">6</button>
+                        <button id="7" type="button" onclick="jumptoquest(7)" class="palette ButtonNotVisited">7</button>
+                        <button id="8" type="button" onclick="jumptoquest(8)" class="palette ButtonNotVisited">8</button>
+                        <button id="9" type="button" onclick="jumptoquest(9)" class="palette ButtonNotVisited">9</button>
+                        <button id="10" type="button" onclick="jumptoquest(10)" class="palette ButtonNotVisited">10</button>
+                    </div>
+                    <div class="divLegend">
+                        <h6 class="font-weight-bold mb-0">Legend </h6>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <button class="ButtonAnswered1" type="button" style="cursor:default;"></button>
+                                        Answered
+                                    </td>
+                                    <td>
+                                        <button class="ButtonNotAnswered1" type="button" style="cursor:default;"></button>
+                                        Not Answered
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button class="ButtonNotAnsweredMarked1" type="button" style="cursor:default;"></button>
+                                        Marked
+                                    </td>
+                                    <td>
+                                        <button class="ButtonNotVisited1" type="button" style="cursor:default;"></button>
+                                        Not Visited
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <button class="ButtonAnsweredMarked1" type="button" style="cursor:default;"></button>
+                                        Answered &amp; Marked for Review
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="divQuestionFilter">
+                            &nbsp;&nbsp;Filter:
+                            <select name="filter" id="ddlQStatus">
+                                <option selected="selected" value="all">All</option>
+                                <option value="notvisit">Not Visited</option>
+                                <option value="notans">Not Answered</option>
+                                <option value="notansmarked">Marked for review</option>
+                                <option value="ansmarked">Answered &amp; marked for review</option>
+                                <option value="ans">Answered</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="divRightpanelBottom">
+                        <center>
+                            <button id="btnQuestionPaper" class="RightPanelButton">Question Paper</button>
+                            <button data-toggle="modal" data-target="#Instructionsmodel" class="RightPanelButton">Instructions</button>
+                            <button id="btnProfile" class="RightPanelButton">Profile</button>
+                            <button id="btnSubmit" class="submitButton">Submit</button>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Instruction Modal -->
+        <div class="modal fade" id="Instructionsmodel" tabindex="-1" role="dialog" aria-labelledby="Instructionsmodellabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center font-weight-bold" id="Instructionsmodellabel">INSTRUCTION
+                            FOR ST (CWEBCLMAINS)</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>1. Read carefully the instructions before starting the test.you can read the instructions in
+                            between
+                            the exam after clicking the
+                            <strong>"INSTRUCTION BUTTON".</strong>
+                            <br>2. You have
+                            <strong>160 minutes</strong> to complete the test.
+                            <br>3. The test contains a total of
+                            <strong>190 questions</strong>.
+                            <br>4.&nbsp; You have
+                            <strong>160 minute</strong> (35 minutes for G.A., 35 minutes for English,&nbsp;45 minutes
+                            for Reasoning
+                            Ability &amp; Computer,&nbsp;45 minutes for Quantitative Aptitude) to complete the test.
+                            <br>5. You will be awarded
+                            <strong>1 marks</strong> for each correct answer.
+                            <br>6. There is
+                            <strong>0.25 negative</strong> marks for each wrong answer.
+                            <br>7. According to your selection of questions it will change the colour in the boxes at
+                            the right
+                            side window, these colours will help you to identify the required group of questions.
+                            <br>8. You can unmark your answer by clicking on the
+                            <strong>"CLEAR RESPONSE"</strong> Option.
+                            <br>9. You can mark a question for reviewing it later by clicking on the “marked &amp;
+                            review” button.
+                            <br>10. You can use the
+                            <strong>"FILTER BUTTON"</strong> to select your choices individually according to your
+                            given answers.
+                            <br>11. A Number list of all questions appears at the right hand side of the window. You
+                            can access
+                            the questions in any order within a section or across sections by clicking on the question
+                            number
+                            given on the number list.
+                            <br>12. You can use rough sheets while taking the test. Do not use calculators, log tables,
+                            dictionaries,
+                            or any other printed/online reference material during the test.
+                            <br>13. Do not click the button
+                            <strong>“SUBMIT TEST”</strong> before completing the test. A test once submitted cannot be
+                            resumed.
+                            <br>14. Submit the Exam at least 10 seconds before completing it and must avoid automatic
+                            submission
+                            otherwise result will not be generated.
+                            <br>15. Online Speed Tests cannot be given between 23:30 hours to 00:15 hours.
+                            <br>16.&nbsp; If your system gets hanged or you face any other problem in internet
+                            connectivity,
+                            - "Don't Worry, Kindly close the window of the Test and you can resume your test from where
+                            you
+                            had left."
+                            <br>17. Once clicked on the
+                            <strong>(SUBMIT TEST)</strong> button, You
+                            <strong>Cannot REDO</strong> this Speed Test.....</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-blue font-weight-bold text-uppercase nav-link active" data-dismiss="modal">Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Instruction Modal -->
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //Preloader
+            $(window).on("load", function () {
+                preloaderFadeOutTime = 1000;
+
+                function hidePreloader() {
+                    var preloader = $('.spinner-wrapper');
+                    preloader.fadeOut(preloaderFadeOutTime);
+                }
+                hidePreloader();
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            //Disable cut copy paste
+            $('body').bind('cut copy paste', function (e) {
+                e.preventDefault();
+            });
+
+            //Disable mouse right click
+            $("body").on("contextmenu", function (e) {
+               return false;
+              });
+
+            $(document).keydown(function (e) {
+                if (e.which === 123) {
+                  return false;
+              }
+            });
+        });
+    </script>
+    <script>
+        function jumptoquest(n) {
+            $("#next").attr('questid', n);
+            $(".ques").hide();
+            $(".ques").each(function () {
+                if ($(this).attr('questid') == n) {
+                    $(this).show();
+                    console.log(n);
+                }
+            });
+        }
+    </script>
+    <script>
+        function jumpto(n) {
+            $(".ques").hide();
+            $('#' + n).show();
+            var data = $('#' + n).attr("questid");
+            $("#next").attr('questid', data);
+        }
+    </script>
+    <script>
+        $(function () {
+            $('.palette').show();
+            $('#ddlQStatus').change(function () {
+                if ($('#ddlQStatus').val() == 'notvisit') {
+                    $('.ButtonNotVisited').show();
+                } else {
+                    $('.ButtonNotVisited').hide();
+                }
+
+                if ($('#ddlQStatus').val() == 'notans') {
+                    $('.ButtonNotAnswered').show();
+                } else {
+                    $('.ButtonNotAnswered').hide();
+                }
+
+                if ($('#ddlQStatus').val() == 'notansmarked') {
+                    $('.ButtonNotAnsweredMarked').show();
+                } else {
+                    $('.ButtonNotAnsweredMarked').hide();
+                }
+
+                if ($('#ddlQStatus').val() == 'ansmarked') {
+                    $('.ButtonAnsweredMarked').show();
+                } else {
+                    $('.ButtonAnsweredMarked').hide();
+                }
+
+                if ($('#ddlQStatus').val() == 'ans') {
+                    $('.ButtonAnswered').show();
+                } else {
+                    $('.ButtonAnswered').hide();
+                }
+
+                if ($('#ddlQStatus').val() == 'all') {
+                    $('.ButtonNotVisited').show();
+                    $('.ButtonNotAnswered').show();
+                    $('.ButtonNotAnsweredMarked').show();
+                    $('.ButtonAnsweredMarked').show();
+                    $('.ButtonAnswered').show();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".ques").hide().first().show();
+
+            $("#next").click(function () {
+                var data = $("#next").attr("questid");
+                var x = data;
+                data = parseInt(data);
+                data = data + 1;
+                //console.log(data);
+                if (data <= 10) {
+                    $(".ques").hide();
+                    $("#next").attr('questid', data);
+                    $(".ques").each(function () {
+                        if ($(this).attr('questid') == data) {
+                            $(this).show();
+                            //console.log(data);
+                        }
+                    });
+                    $(".ques").each(function () {
+                        if ($(this).attr('questid') == x) {
+                            if ($("#questionbody input:radio[name=" + x + "]").is(":checked")) {
+                                $('#' + x).removeClass(
+                                    'ButtonNotVisited ButtonAnsweredMarked ButtonNotAnsweredMarked'
+                                );
+                                $('#' + x).addClass('ButtonAnswered');
+                            } else {
+                                $('#' + x).removeClass('ButtonNotVisited');
+                                $('#' + x).addClass('ButtonNotAnswered');
+                            }
+
+                            // console.log($("input:radio").name);
+                            console.log(x);
+                        }
+                    });
+                } else {
+                    confirm("Are You Sure to Finish");
+                }
+
+            });
+
+            //var $foo = $('.card-body');
+            //var count = $foo[0].childElementCount
+            //console.log(count);
+            //var divs = $('.card-body>div');
+            // var now = 0; // currently shown div
+            // var end = count - 1;
+            //divs.hide().first().show();
+            //$("button[name=next]").click(function (e) {
+            //     divs.eq(now).hide();
+            //  now = (now + 1 < divs.length) ? now + 1 : end;
+            //  divs.eq(now).show(); // show next
+            //  console.log(divs.length, now);
+            //});
+            //  $("button[name=prev]").click(function (e) {
+            //    divs.eq(now).hide();
+            //    now = (now > 0) ? now - 1 : 0;
+            //   divs.eq(now).show(); // or .css('display','block');
+            //  console.log(divs.length, now);
+            // });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#btnMarkForReview").click(function () {
+                var data = $("#next").attr("questid");
+                var x = data;
+                data = parseInt(data);
+                data = data + 1;
+                //console.log(data);
+                if (data <= 10) {
+                    $(".ques").hide();
+                    $("#next").attr('questid', data);
+                    $(".ques").each(function () {
+                        if ($(this).attr('questid') == data) {
+                            $(this).show();
+                            //console.log(data);
+                        }
+                    });
+                    $(".ques").each(function () {
+                        if ($(this).attr('questid') == x) {
+                            if ($("#questionbody input:radio[name=" + x + "]").is(":checked")) {
+                                $('#' + x).removeClass('ButtonNotVisited');
+                                $('#' + x).addClass('ButtonAnsweredMarked');
+                            } else {
+                                $('#' + x).removeClass('ButtonNotVisited');
+                                $('#' + x).addClass('ButtonNotAnsweredMarked');
+                            }
+
+                            // console.log($("input:radio").name);
+                            console.log(x);
+                        }
+                    });
+                } else {
+                    confirm("Are You Sure to Finish");
+                }
+
+            });
+        });
+    </script>
+    <script>
+        $('#btnClearResponse').click(function () {
+            var data = $("#next").attr("questid");
+            var x = data;
+            $(".ques").each(function () {
+                if ($(this).attr('questid') == x) {
+                    if ($("#questionbody input:radio[name=" + x + "]").is(":checked")) {
+                        $("#questionbody input:radio[name=" + x + "]").prop('checked', false);
+                        $('#' + x).removeClass('ButtonNotVisited ButtonAnswered ButtonAnsweredMarked');
+                        $('#' + x).addClass('ButtonNotAnswered');
+                    }
+                }
+            });
+            //$('[type=radio]').prop('checked', false);
+        });
+    </script>
+    <script>
+        var timer2 = "180:00";
+        var interval = setInterval(function () {
+
+
+            var timer = timer2.split(':');
+            //by parsing integer, I avoid all extra string processing
+            var minutes = parseInt(timer[0], 10);
+            var seconds = parseInt(timer[1], 10);
+            --seconds;
+            minutes = (seconds < 0) ? --minutes : minutes;
+            if (minutes < 0) clearInterval(interval);
+            seconds = (seconds < 0) ? 59 : seconds;
+            seconds = (seconds < 10) ? '0' + seconds : seconds;
+            //minutes = (minutes < 10) ?  minutes : minutes;
+            $('.countdown').html(minutes + ':' + seconds);
+            timer2 = minutes + ':' + seconds;
+        }, 1000);
+    </script>
+
+</body>
+
+</html>
